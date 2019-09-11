@@ -13,7 +13,7 @@ Mutational frequencies in different cancer types from TCGA
   follow standard TCGA maf file notations.
   
 This data object was obtained using the following code:
-
+```
 #'  The file mc3.v0.2.8.PUBLIC.maf can be downloaded from https://gdc.cancer.gov/about-data/publications/mc3-2017
 #' pancan<-read.table(  "mc3.v0.2.8.PUBLIC.maf",sep="\t",header=T,quote="") 
 #' 
@@ -44,3 +44,4 @@ This data object was obtained using the following code:
 #' rownames(freqdata)<-names(table(pancan$mut[w]))
 #' colnames(freqdata)<-types
 #' freqdata<-rbind(ntypes,freqdata)
+```
